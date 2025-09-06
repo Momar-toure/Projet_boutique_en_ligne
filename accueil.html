@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Lien Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!--Lien Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bienvenue sur la boutique </title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Navbar de la page -->
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid" style="background-color: pink;">
+                <img src="./images/mode-feminine_878566-633.avif" alt="logo" width="80px" height="80px">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Lachic boutique</strong></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Accueil</a>
+                            </li>
+
+                            <!-- Une barre catégorisée mais sans articles -->
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#" aria-expanded="false">
+                                    Vêtements pour hommes
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#" aria-expanded="false">
+                                    Vêtements pour femmes
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#" aria-expanded="false">
+                                    Vêtements pour enfants
+                                </a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Caroussel avec des images de vetements -->
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./images/styles-vestimentaires-homme.webp" class="d-block w-100" alt="homme"
+                        height="450px">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/Copie-de-Green-Monochrome-Mood-Board-Photo-Collage-7.webp" class="d-block w-100"
+                        alt="femmes" height="450px">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/vetement-enfant-rentree-2023-750x394.jpg" class="d-block w-100" alt="enfants"
+                        height="450px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br><br><br>
+
+        <h5 class="Produits"><strong>Les produits :</strong></h5>
+
+        <!-- Produits et prix en colonne -->
+
+        <div class="container">
+
+            <div class="item item1">
+                <img src="./images/Veste en cuir noir.jpeg" alt="Veste" height="200px" width="200px">
+                <br><br>
+
+                <p class="descript"> Veste 100% cuir noir</p>
+
+                <p class="descript">tres bonne qualite</p>
+
+                <p class="descript">parfait pour vous tenir a chaud</p>
+
+                <h5 class="prix"> <strong>15.000 F CFA</strong></h5>
+                <br><br>
+
+                <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    Acheter maintenant
+                </button>
+            </div>
+
+            <div class="item item2">
+                <img src="./images/Manteau Gris.jpeg" alt="Manteau" height="200px" width="200px">
+                <br><br>
+
+                <p class="descript"> Manteau en velour</p>
+
+                <p class="descript">tres bonne qualite</p>
+
+                <p class="descript">Chic et elegant</p>
+
+                <h5 class="prix"> <strong>20.000 F CFA</strong></h5>
+                <br><br>
+
+                <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    Acheter maintenant
+                </button>
+
+            </div>
+
+            <div class="item item3">
+                <img src="./images/Robe fleurette en soie.jpeg" alt="robe" height="200px" width="200px">
+                <br><br>
+
+                <p class="descript"> Robe en Soi imprimee fleurette</p>
+
+                <p class="descript">Tres legere</p>
+
+                <p class="descript">Parfait pour l'ete</p>
+
+                <h5 class="prix"> <strong>10.000 F CFA</strong></h5>
+                <br><br>
+
+                <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    Acheter maintenant
+                </button>
+            </div>
+
+            <div class="item item4">
+                <img src="./images/Robe grise.jpeg" alt="Robe 2" height="200px" width="200px">
+                <br><br>
+
+                <p class="descript"> Robe simple</p>
+
+                <p class="descript">tres classe</p>
+
+                <p class="descript">Parfait pour l'ete</p>
+
+                <h5 class="prix"> <strong>10.000 F CFA</strong></h5>
+                <br><br>
+
+                <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    Acheter maintenant
+                </button>
+            </div>
+
+            <div class="item item5">
+                <img src="./images/Ensemble en coton pour enfant.jpeg" alt="ensemble-enfant" height="200px"
+                    width="200px">
+                <br><br>
+
+                <p class="descript"> Ensemble en Coton pour enfant</p>
+
+                <p class="descript">tres bonne qualite</p>
+
+                <p class="descript">Tres agreable sur la peau</p>
+
+                <h5 class="prix"> <strong>12.000 F CFA</strong></h5>
+                <br><br>
+
+                <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    Acheter maintenant
+                </button>
+            </div>
+
+            <div class="item item6">
+                <img src="./images/Ensemble Rose avec saccoche.jpg" alt="enfant" height="200px" width="200px">
+                <br><br>
+
+                <p class="descript"> Ensemble Robe avec saccoche</p>
+
+                <p class="descript">Saccoche en velour</p>
+
+                <p class="descript">Elegante et classe</p>
+
+                <h5 class="prix"> <strong>14.000 F CFA</strong></h5>
+                <br><br>
+
+                <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    Acheter maintenant
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+<!-- Footer -->
+
+    <footer>
+
+        <div class="container-fluid">
+
+            <p><center>© Copyright 2025</center></p> 
+
+<!-- reseaux sociaux-->
+
+        <i class="fa-brands fa-instagram"> Lachic-Boutique </i><br>
+
+        <i class="fa-brands fa-facebook-f"> Lachic-Boutique</i><br>
+
+        <i class="fa-solid fa-globe"> www.lachic_boutique.com</i>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+.navbar {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    position: fixed;
+}
+
+.Produits {
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 600px 600px;
+    gap: 1px 30px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.descript {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+}
+
+.prix {
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    text-align: right;
+    text-decoration: solid underline;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+    justify-items: center;
+}
+
+footer {
+    .container-fluid {
+        background: pink;
+        margin-top: 10%;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .navbar {
+        .container-fluid {
+            width: 100vw;
+        }
+    }
+
+    .carousel-inner {
+        height: 250px;
+    }
+
+    h5 {
+        width: auto;
+        height: auto;
+
+    }
+
+    .container {
+        margin: 0%;
+        padding: 0%;
+        display: block;
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6 {
+            margin-top: 5%;
+            padding: 0%;
+            height: 70vh;
+
+        }
+    }
+}
+
+@media (min-width:576px) and (max-width: 768px) {
+
+    .navbar {
+        .container-fluid {
+            margin: 0%;
+            padding: 0%;
+            width: 100vw;
+
+        }
+    }
+
+    .carousel-inner {
+        width: 100vw;
+        height: 300px;
+    }
+
+    h5 {
+        width: auto;
+        height: auto;
+
+    }
+
+    .container {
+        margin: 5%;
+        padding: 0%;
+        display: grid;
+        place-items: start;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        gap: 1px 10px;
+        row-gap: 200px;
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6 {
+            margin: 0%;
+            padding: 0%;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 942px) {
+
+    .navbar {
+        .container-fluid {
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+
+        }
+    }
+
+    .carousel-inner {
+        width: 100vw;
+        height: 450px;
+    }
+
+    h5 {
+        width: auto;
+        height: auto;
+
+    }
+
+    .container {
+        margin: 5%;
+        padding: 0%;
+        justify-items: start;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 380px 380px;
+        gap: 1px 20px;
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6 {
+            margin: 0%;
+            padding: 0%;
+        }
+    }
+}
+
